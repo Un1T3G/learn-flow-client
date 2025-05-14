@@ -1,0 +1,52 @@
+'use client'
+
+import { UserStudentUpdateForm } from 'features/users'
+import { Pencil } from 'lucide-react'
+import { useTranslations } from 'next-intl'
+import { useState } from 'react'
+import { GroupResponse, StudentDto } from 'shared/api'
+import {
+  Button,
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from 'shared/ui'
+
+interface IProps {
+  id: string
+  initialValues: StudentDto
+  groups: GroupResponse[]
+}
+
+export const UserStudentUpdateModal = ({
+  id,
+  initialValues,
+  groups,
+}: IProps) => {
+  const [open, setOpen] = useState(false)
+  const t = useTranslations()
+
+  return (
+    <Dialog open={open} onOpenChange={setOpen}>
+      <DialogTrigger asChild>
+        <Button size="icon">
+          <Pencil />
+        </Button>
+      </DialogTrigger>
+      <DialogContent className="sm:max-w-[425px]">
+        <DialogHeader>
+          <DialogTitle>{t('titles.updateStudent')}</DialogTitle>
+        </DialogHeader>
+
+        <UserStudentUpdateForm
+          id={id}
+          initialValues={initialValues}
+          groups={groups}
+          onSuccess={() => setOpen(false)}
+        />
+      </DialogContent>
+    </Dialog>
+  )
+}

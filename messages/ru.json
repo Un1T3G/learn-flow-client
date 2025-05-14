@@ -1,0 +1,104 @@
+{
+  "app": {
+    "title": "Платформа оценок расписаний",
+    "description": "Веб-приложение, предназначенное для сбора обратной связи от студентов о качестве и удобстве учебных расписаний. Цель платформы — выявление проблемных участков (таких как «окна», перегрузки, нерациональное распределение занятий) и содействие в улучшении организации учебного процесса."
+  },
+  "pageTitles": {
+    "login": "Авторизация",
+    "register": "Регистрация",
+    "manageSchedule": "Расписание",
+    "manageTeachers": "Преподаватели",
+    "manageStudents": "Ученики"
+  },
+  "form": {
+    "loginLabel": "Логин",
+    "passwordLabel": "Пароль",
+    "loginAction": "Войти",
+    "registerAction": "Зарегистрироваться",
+    "firstNameLabel": "Имя",
+    "lastNameLabel": "Фамилия",
+    "secretCodeLabel": "Секретный код",
+    "nameLabel": "Название",
+    "createAction": "Создать",
+    "saveAction": "Сохранить",
+    "cancelAction": "Отменить",
+    "slugLabel": "Адрес",
+    "subjectPlaceholder": "Выберите предмет",
+    "teacherPlaceholder": "Выберите преподавателя",
+    "groupPlaceholder": "Выберите группу",
+    "subjectLabel": "Предмет",
+    "teacherLabel": "Преподаватель",
+    "weekLabel": "Выберите неделю",
+    "scoreLabel": "Оценка",
+    "commentLabel": "Комментарии"
+  },
+  "validation": {
+    "mustNotBeEmpty": "Обязательное поле",
+    "mustBeString": "Должно быть строкой"
+  },
+  "auth": {
+    "login": "Авторизация",
+    "register": "Регистрация",
+    "loginSuccess": "Вы успешно авторизовались",
+    "registerSuccess": "Вы успешно зарегистрировались",
+    "refreshTokensSuccess": "Токены обновлены",
+    "tokensExpired": "Токены истекли",
+    "logoutAction": "Выход",
+    "logoutSuccess": "Вы успешно вышли"
+  },
+  "serverErrors": {
+    "Secret key is incorrect": "Неверный секретный код"
+  },
+  "navigation": {
+    "manageSchedule": "Расписание",
+    "manageSubjects": "Предметы",
+    "manageTeachers": "Преподаватели",
+    "manageStudents": "Ученики",
+    "manageGroups": "Группы",
+    "manageScheduleCreate": "Добавление расписания"
+  },
+  "schedule": {
+    "addSchedule": "Добавить расписание",
+    "empty": "Расписание пустое"
+  },
+  "actions": {
+    "addSchedule": "Добавить расписание",
+    "saveSuccess": "Сохранено",
+    "createSuccess": "Создано",
+    "deleteSuccess": "Удалено",
+    "deleteConfirm": "Вы уверены, что хотите удалить?",
+    "delete": "Удалить",
+    "createGroup": "Создать группу",
+    "createSubject": "Создать предмет",
+    "createTeacher": "Создать преподавателя",
+    "createStudent": "Создать ученика",
+    "cancel": "Отменить",
+    "createAction": "Создать",
+    "createScheduleSuccess": "Расписание успешно создано",
+    "createSchedule": "Добавить расписание"
+  },
+  "titles": {
+    "createGroup": "Создание группы",
+    "updateGroup": "Редактирование группы",
+    "createSubject": "Создание предмета",
+    "updateSubject": "Редактирование предмета",
+    "createTeacher": "Создание преподавателя",
+    "updateTeacher": "Редактирование преподавателя",
+    "createStudent": "Создание ученика",
+    "updateStudent": "Редактирование ученика",
+    "createReview": "Добавление отзыва"
+  },
+  "languages": {
+    "ru": "Русский",
+    "qq": "Каракалпакский",
+    "uz": "Узбекский"
+  },
+  "weekdays": {
+    "monday": "Понедельник",
+    "tuesday": "Вторник",
+    "wednesday": "Среда",
+    "thursday": "Четверг",
+    "friday": "Пятница",
+    "saturday": "Суббота"
+  }
+}
